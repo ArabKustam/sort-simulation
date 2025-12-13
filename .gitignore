@@ -1,0 +1,14 @@
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Node.js (if you decide to use it later)
+node_modules/
+npm-debug.log
+
+# Editor directories
+.idea/
+.vscode/
+*.swp

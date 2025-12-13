@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визуализация Сортировок | Sorting Visualizer</title>
+    <meta name="description" content="Интерактивная визуализация алгоритмов сортировки с подсветкой кода">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__logo">
+                <svg class="header__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3v18h18" />
+                    <path d="M7 16l4-8 4 6 4-10" />
+                </svg>
+                <h1 class="header__title">Sorting Visualizer</h1>
+            </div>
+            <div class="header__subtitle">Визуализация алгоритмов сортировки</div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Controls Panel -->
+            <section class="controls">
+                <div class="controls__group">
+                    <label class="controls__label" for="algorithm-select">Алгоритм</label>
+                    <select id="algorithm-select" class="controls__select">
+                        <option value="bubble">Bubble Sort</option>
+                        <option value="selection">Selection Sort</option>
+                        <option value="insertion">Insertion Sort</option>
+                        <option value="merge">Merge Sort</option>
+                        <option value="quick">Quick Sort</option>
+                    </select>
+                </div>
+
+                <div class="controls__group">
+                    <label class="controls__label" for="array-size">Размер: <span id="size-value">20</span></label>
+                    <input type="range" id="array-size" class="controls__slider" min="5" max="50" value="20">
+                </div>
+
+                <div class="controls__group">
+                    <label class="controls__label" for="speed">Скорость: <span id="speed-value">50</span>ms</label>
+                    <input type="range" id="speed" class="controls__slider" min="10" max="500" value="50">
+                </div>
+
+                <div class="controls__group">
+                    <label class="controls__label" for="view-mode">Вид</label>
+                    <select id="view-mode" class="controls__select controls__select--small">
+                        <option value="bars">Столбики</option>
+                        <option value="numbers">Цифры</option>
+                    </select>
+                </div>
+
+                <div class="controls__buttons">
+                    <button id="btn-play" class="btn btn--primary">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        <span>Запуск</span>
+                    </button>
+                    <button id="btn-pause" class="btn btn--secondary" disabled>
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 4h4v16H6zM14 4h4v16h-4z" />
+                        </svg>
+                        <span>Пауза</span>
+                    </button>
+                    <button id="btn-step" class="btn btn--secondary">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 4l10 8-10 8V4zM18 4v16h-2V4h2z" />
+                        </svg>
+                        <span>Шаг</span>
+                    </button>
+                    <button id="btn-reset" class="btn btn--accent">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                            <path d="M3 3v5h5" />
+                        </svg>
+                        <span>Сброс</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Visualization Area -->
+            <div class="content">
+                <section class="visualization">
+                    <div class="visualization__header">
+                        <h2 class="visualization__title">Массив</h2>
+                        <div class="visualization__stats">
+                            <span class="stat">Сравнений: <strong id="comparisons">0</strong></span>
+                            <span class="stat">Обменов: <strong id="swaps">0</strong></span>
+                        </div>
+                    </div>
+                    <div id="array-container" class="visualization__array"></div>
+                    <div class="visualization__legend">
+                        <span class="legend-item legend-item--default">Обычный</span>
+                        <span class="legend-item legend-item--comparing">Сравнение</span>
+                        <span class="legend-item legend-item--swapping">Обмен</span>
+                        <span class="legend-item legend-item--sorted">Отсортирован</span>
+                        <span class="legend-item legend-item--pivot">Опорный</span>
+                    </div>
+                </section>
+
+                <!-- Code Panel -->
+                <section class="code-panel">
+                    <div class="code-panel__header">
+                        <h2 class="code-panel__title">Код алгоритма</h2>
+                        <span id="algorithm-name" class="code-panel__algo-name">Bubble Sort</span>
+                    </div>
+                    <div class="code-panel__info">
+                        <div id="algorithm-complexity" class="complexity">
+                            <span>Сложность: <strong>O(n²)</strong></span>
+                        </div>
+                    </div>
+                    <pre id="code-display" class="code-panel__code"><code></code></pre>
+                    <div id="step-description" class="code-panel__description">
+                        Нажмите "Запуск" или "Шаг" для начала
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Sorting Visualizer © 2024 | Интерактивное изучение алгоритмов</p>
+        </footer>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
