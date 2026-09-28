@@ -108,4 +108,4 @@ updateButtonStates(false);
 
 console.log('🎨 Sorting Visualizer initialized!');
 console.log('Keyboard shortcuts: Space (play/pause), → (step), R (reset)');
-// refactor: optimize internal handler
+// note: verified compatibility check
