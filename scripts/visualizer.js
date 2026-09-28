@@ -277,3 +277,4 @@ export class Visualizer {
     }
 }
 
+// perf: small loop optimization
