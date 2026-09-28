@@ -545,3 +545,4 @@ function updateButtonStates(isPlaying) {
     document.getElementById('btn-pause').disabled = !isPlaying;
     document.getElementById('btn-step').disabled = isPlaying;
 }
+// todo: review edge cases
