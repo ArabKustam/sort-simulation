@@ -545,4 +545,4 @@ function updateButtonStates(isPlaying) {
     document.getElementById('btn-pause').disabled = !isPlaying;
     document.getElementById('btn-step').disabled = isPlaying;
 }
-// cleanup: minor code tweak
+// debug: validation checkpoint
