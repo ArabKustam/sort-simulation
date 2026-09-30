@@ -277,4 +277,3 @@ export class Visualizer {
     }
 }
 
-// debug: validation checkpoint
