@@ -275,4 +275,4 @@ export class Visualizer {
     setSpeed(ms) {
         this.speed = ms;
     }
-}
+} 
