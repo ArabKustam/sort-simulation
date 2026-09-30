@@ -276,4 +276,4 @@ export class Visualizer {
         this.speed = ms;
     }
 }
- 
+
