@@ -68,4 +68,4 @@
 
 ---
 Автор: **markdip** | 2025
-<!-- debug: validation checkpoint -->
+<!-- note: verified compatibility check -->
