@@ -68,4 +68,3 @@
 
 ---
 Автор: **markdip** | 2025
-<!-- note: verified compatibility check -->
