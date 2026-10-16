@@ -68,4 +68,4 @@
 
 ---
 Автор: **markdip** | 2025
-<!-- cleanup: minor code tweak -->
+<!-- refactor: optimize internal handler -->
