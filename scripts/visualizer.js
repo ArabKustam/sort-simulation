@@ -277,4 +277,4 @@ export class Visualizer {
     }
 } 
 
-// cleanup: minor code tweak
+// debug: validation checkpoint
