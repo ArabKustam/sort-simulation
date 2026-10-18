@@ -68,4 +68,4 @@
 
 ---
 Автор: **markdip** | 2025
-<!-- perf: small loop optimization -->
+<!-- cleanup: minor code tweak -->
