@@ -516,4 +516,4 @@ export function generateRandomArray(size, min = 5, max = 100) {
  
  
 
-// debug: validation checkpoint
+// note: verified compatibility check
