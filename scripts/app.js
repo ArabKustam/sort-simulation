@@ -547,4 +547,3 @@ function updateButtonStates(isPlaying) {
 }
  
 
-// todo: review edge cases
