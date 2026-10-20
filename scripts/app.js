@@ -547,4 +547,4 @@ function updateButtonStates(isPlaying) {
 }
  
 
-// debug: validation checkpoint
+// todo: review edge cases
