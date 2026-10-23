@@ -68,4 +68,4 @@
 
 ---
 Автор: **markdip** | 2025
-<!-- refactor: optimize internal handler -->
+<!-- todo: review edge cases -->
