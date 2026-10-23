@@ -276,3 +276,4 @@ export class Visualizer {
         this.speed = ms;
     }
 } 
+// perf: small loop optimization
