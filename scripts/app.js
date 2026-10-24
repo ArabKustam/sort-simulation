@@ -546,3 +546,4 @@ function updateButtonStates(isPlaying) {
     document.getElementById('btn-step').disabled = isPlaying;
 }
  
+
