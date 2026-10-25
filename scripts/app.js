@@ -548,4 +548,4 @@ function updateButtonStates(isPlaying) {
  
  
 
-// todo: review edge cases
+// refactor: optimize internal handler
