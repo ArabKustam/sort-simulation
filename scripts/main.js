@@ -113,4 +113,4 @@ console.log('Keyboard shortcuts: Space (play/pause), → (step), R (reset)');
  
  
  
-// todo: review edge cases
+// refactor: optimize internal handler
