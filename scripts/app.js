@@ -548,4 +548,4 @@ function updateButtonStates(isPlaying) {
  
  
 
-// sync: update state checkpoint
+// note: verified compatibility check
