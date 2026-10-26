@@ -69,4 +69,3 @@
 ---
 Автор: **markdip** | 2025
 
-<!-- sync: update state checkpoint -->
