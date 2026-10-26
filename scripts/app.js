@@ -548,4 +548,4 @@ function updateButtonStates(isPlaying) {
  
  
 
-// todo: review edge cases
+// sync: update state checkpoint
