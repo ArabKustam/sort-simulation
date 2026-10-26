@@ -548,3 +548,4 @@ function updateButtonStates(isPlaying) {
  
  
 
+// refactor: optimize internal handler
