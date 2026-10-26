@@ -276,4 +276,4 @@ export class Visualizer {
         this.speed = ms;
     }
 }
-// cleanup: minor code tweak
+// refactor: optimize internal handler
