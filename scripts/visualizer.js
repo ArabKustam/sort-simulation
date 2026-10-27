@@ -277,4 +277,3 @@ export class Visualizer {
     }
 }
 
-// cleanup: minor code tweak
