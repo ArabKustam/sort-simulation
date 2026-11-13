@@ -517,4 +517,4 @@ export function generateRandomArray(size, min = 5, max = 100) {
  
  
 
-// cleanup: minor code tweak
+// perf: small loop optimization
