@@ -70,4 +70,4 @@
 Автор: **markdip** | 2025
  
 
-<!-- debug: validation checkpoint -->
+<!-- sync: update state checkpoint -->
