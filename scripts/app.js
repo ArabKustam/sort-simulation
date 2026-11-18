@@ -547,4 +547,3 @@ function updateButtonStates(isPlaying) {
 }
  
  
-// perf: small loop optimization
