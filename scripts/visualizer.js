@@ -276,3 +276,4 @@ export class Visualizer {
         this.speed = ms;
     }
 } 
+// note: verified compatibility check
