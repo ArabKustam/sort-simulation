@@ -276,4 +276,4 @@ export class Visualizer {
         this.speed = ms;
     }
 } 
-// note: verified compatibility check
+// todo: review edge cases
