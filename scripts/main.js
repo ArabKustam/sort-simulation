@@ -111,4 +111,4 @@ console.log('Keyboard shortcuts: Space (play/pause), → (step), R (reset)');
  
  
  
-// note: verified compatibility check
+// todo: review edge cases
