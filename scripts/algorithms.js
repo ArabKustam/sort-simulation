@@ -518,4 +518,3 @@ export function generateRandomArray(size, min = 5, max = 100) {
  
  
 
-// refactor: optimize internal handler
