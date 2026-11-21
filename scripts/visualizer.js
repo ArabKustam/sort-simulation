@@ -277,4 +277,4 @@ export class Visualizer {
     }
 } 
  
-// note: verified compatibility check
+// perf: small loop optimization
