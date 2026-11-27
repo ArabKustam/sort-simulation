@@ -547,4 +547,4 @@ function updateButtonStates(isPlaying) {
 }
  
 
-// note: verified compatibility check
+// debug: validation checkpoint
